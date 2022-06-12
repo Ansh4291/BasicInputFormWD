@@ -23,3 +23,12 @@
                 telError.textContent = "";
             else telError.textContent = "Phone number is incorrect";
         });
+
+        const pwd = document.querySelector('#pwd');
+        const pwdError = document.querySelector('.pwd-error');
+        pwd.addEventListener('input', function () {
+            let nameRegex = RegExp('^[A-za-z0-9]{8}$');
+            if (nameRegex.test(pwd.value))
+                pwdError.textContent = "";
+            else pwdError.textContent = "Password is incorrect";
+        });
