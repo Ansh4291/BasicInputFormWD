@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple input form</title>
+    <link rel="stylesheet" href="/CSS/simpleForm.css">
+</head>
+
+<body>
+    <form>
+        <header class="headerContainer">
+            <h1>Basic Input Form Details</h1>
+        </header>
+        <div>
+            <label for="text">Enter Name:-</label>
+            <input type="text" id="text" name="text" required>
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+        <div>
+            <label for="pwd">Enter Password:-</label>
+            <input type="password" id="pwd" name="pwd" required>
+        </div>
+        <div>
+            <label for="email">Enter the Email:-</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="url">Enter URL</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <div>
+            <label for="number">Enter the Number</label>
+            <input type="number" name="number" id="number">
+        </div>
+        <div>
+            <label for="tel">Enter the phone Numnber</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+        <div>
+            <label for="search">Search input type</label>
+            <input type="search" name="search" id="search">
+        </div>
+        <div class="nativeDateTimePicker">
+            <label for="startDate">Choose Date And time:-</label>
+            <input type="datetime-local" name="startdate" id="startdate">
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label for="salary">Choose your salary:-</label>
+            <input type="range" name="salary" id="salry" min="300000" max="500000" step="100" value="400000">
+            <output class="salary-output" for="salary">400000</output>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+    <script src="/javascript/SimpleForm.js"></script>
+    
+</body>
+
+</html>
