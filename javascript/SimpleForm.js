@@ -15,4 +15,11 @@
             output.textContent = salary.value;
         });
 
-        
+        const tel = document.querySelector('#tel');
+        const telError = document.querySelector('.tel-error');
+        tel.addEventListener('input', function () {
+            let nameRegex = RegExp('^[0-9]{2}\\s[0-9]{10}$');
+            if (nameRegex.test(tel.value))
+                telError.textContent = "";
+            else telError.textContent = "Phone number is incorrect";
+        });
